@@ -75,6 +75,7 @@
 (def ^:private MSG-ROUTE-SET            (unchecked-byte 0x52))
 (def ^:private MSG-GRAPH-LOAD-ACK       (unchecked-byte 0x53))
 (def ^:private MSG-OSC                  (unchecked-byte 0x57))
+(def ^:private MSG-TAP                  (unchecked-byte 0x58)) ; ←client analysis taps (nous.tap)
 
 ;; ---------------------------------------------------------------------------
 ;; Frame serialization — kept here so @#'kairos/make-frame still works in tests

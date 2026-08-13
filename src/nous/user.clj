@@ -63,6 +63,7 @@
             [nous.spatial-field :as sf]
             [nous.config     :as config]
             [nous.osc        :as osc]
+            [nous.tap        :as tap]
             [nous.remote     :as remote]
             [nous.transform  :as xf]
             [nous.ivk        :as ivk]
@@ -579,6 +580,11 @@
 (def osc-unsubscribe-all!    osc/unsubscribe-all!)
 (def osc-subscribers         osc/subscribers)
 (def ctrl-path->osc-address  osc/ctrl-path->osc-address)
+
+;; Analysis taps — the studio's "ears" (§ nous.tap)
+(def taps                    tap/taps)
+(def tap                     tap/tap)
+(def tap-epoch               tap/tap-epoch)
 
 ;; ---------------------------------------------------------------------------
 ;; MIDI send shorthand (kairos)
